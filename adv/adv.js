@@ -13,7 +13,7 @@ const choiceData = document.getElementById('choice_data');
 
 const submitButton = document.getElementById ('submit');
 
-//get user name from local storage and update the DOM
+//get user name, and default numbers of insight, selfEsteem, and joy from local storage and update the DOM
 fairName.textContent = localStorage.getItem('fairName');
 insight.textContent = localStorage.getItem('insight');
 selfEsteem.textContent = localStorage.getItem('selfEsteem');
@@ -29,11 +29,34 @@ questName.textContent = gear.id;
 description.textContent = gear.description;
 image.src = gear.image;
 
-console.log(gear.choices[1]);
-
 //lets get the choices to populate
+//set variable of gearChoices
+const gearChoices = gear.choices;
 
-const gearChoices = gear.Choices;
+console.log((gear.choices)[0]);
 
-   
+function createChoice(choice) {
+    //creates a label element
+    const label = document.createElement('label');
+    //add a class of choice to it
+    label.classList.add('choice');
 
+    //below creates a radio button
+
+    //first step is to create the input element and make the
+    const radio = document.createElement('input');
+    radio.type = 'radio';
+    radio.name = 'choice';
+    radio.required = true;
+    radio.value = choice.id;
+    label.appendChild(radio);
+
+    const description = document.createElement('span');
+    description.textContent = choice.description;
+    label.appendChild(description);
+
+    return label;
+}
+//test createChoice function
+let yo = createChoice(gearChoices[0]);
+console.log(yo);
