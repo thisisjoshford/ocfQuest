@@ -10,24 +10,29 @@
 </head>
 <body>
 <header>
-    <h1>Welcome to the Oregon Country Fair!</h1>
-    <img src='./assets/OCF_LOGO.jpg'>
+    <h1 class="center">Welcome to the Oregon Country Fair!</h1>
+    <div class="center">
+        <img src='./assets/OCF_LOGO.jpg'>
+    </div>
 </header>
-<br>
-<fieldset id="attendeeChoice">
-    <legend>How would you like to attend the fair?</legend>
-    <input type="radio" name="character" id="public" checked>Public
-    <input type="radio" name="character" id="trashCrew">Trash Crew
-    <input type="radio" name="character" id="kitchenCrew">Kitchen Crew
-    <input type="radio" name="character" id="foodVendor">Food Vendor
-    <input type="radio" name="character" id="vaudeville">Vaudeville Performer
-</fieldset>
-<br>
-<fieldset id="NameInput">
-    <legend>Fair Name</legend>
-    <input id="fairName" type="text" placeholder="Enter fair name...">
-    <button type="button" id="submitButton">Lets go!</button>
-</fieldset>
+
+<div class="center">
+    <fieldset id="attendeeChoice">
+        <legend>How would you like to attend the fair?</legend>
+        <input type="radio" name="character" id="public" checked>Public
+        <input type="radio" name="character" id="trashCrew">Trash Crew
+        <input type="radio" name="character" id="kitchenCrew">Kitchen Crew
+        <input type="radio" name="character" id="foodVendor">Food Vendor
+        <input type="radio" name="character" id="vaudeville">Vaudeville Performer
+    </fieldset>
+</div>
+<div class="center">
+    <fieldset id="nameInput">
+        <legend>Fair Name</legend>
+        <input id="fairName" type="text" placeholder="Enter fair name...">
+        <button type="button" id="submitButton">Lets go!</button>
+    </fieldset>
+</div>
     <script type="module" src="app.js"></script>
 </body>
 

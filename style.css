@@ -1,0 +1,18 @@
+* {
+    background-color: #E1DAAC;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#attendeeChoice {
+    width: 600px;
+}
+#nameInput {
+    width: 200px;
+    height: 50px;
+
+}
