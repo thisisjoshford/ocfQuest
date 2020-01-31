@@ -116,7 +116,7 @@ const wook = {
         insight: 100,
         joy: 100,
         self_esteem: 300
-    },]
+    }]
 };
 
 const quests = [
