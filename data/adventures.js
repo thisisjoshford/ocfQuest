@@ -2,7 +2,6 @@ const gear = {
     id: 'gear',
     title: 'Oh no! You forgot something!',
     image: 'gear.jpg',
-    audio: 'monsters.wav',
     description: `
         Shit man.... you forgot an essential item for fair... you look in your bag and notice this is missing!
     `,
@@ -119,10 +118,10 @@ const wook = {
     }]
 };
 
-const quests = [
+const adventures = [
     gear,
     shower, 
     wook,
 ];
 
-export default quests;
+export default adventures;

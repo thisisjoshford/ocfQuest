@@ -8,7 +8,10 @@ submitButton.addEventListener('click', () => {
 
     localStorage.setItem('fairName', fairName.value);
     localStorage.setItem('fairPlayer', fairPlayer.id);
-    window.location = './quest/index.html';
+    localStorage.setItem('joy', 20);
+    localStorage.setItem('selfEsteem', 20);
+    localStorage.setItem('insight', 20);
+    window.location = './adv/index.html';
 });
 
 
