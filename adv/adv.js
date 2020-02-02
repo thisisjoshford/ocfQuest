@@ -33,8 +33,6 @@ image.src = gear.image;
 //set variable of gearChoices
 const gearChoices = gear.choices;
 
-console.log((gear.choices)[0]);
-
 function createChoice(choice) {
     //creates a label element
     const label = document.createElement('label');

@@ -2,6 +2,11 @@ const gear = {
     id: 'gear',
     title: 'Oh no! You forgot something!',
     image: 'gear.jpg',
+    map: {
+        top: '31%',
+        left: '5%'
+    },
+    active: true,
     description: `
         Shit man.... you forgot an essential item for fair... you look in your bag and notice this is missing!
     `,
@@ -45,7 +50,12 @@ const shower = {
     id: 'shower',
     title: 'Time to take a shower!',
     image: 'shower.jpg',
+    map: {
+        top: '31%',
+        left: '5%'
+    },
     audio: 'monsters.wav',
+    active: true,
     description: `
         You smell fairly rank!  Time to take a shower and feel better!
     `,
@@ -96,6 +106,7 @@ const wook = {
         top: '31%',
         left: '5%'
     },
+    active: true,
     image: 'wook.png',
     audio: 'wook.wav',
     description: `

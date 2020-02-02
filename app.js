@@ -11,7 +11,8 @@ submitButton.addEventListener('click', () => {
     localStorage.setItem('joy', 20);
     localStorage.setItem('selfEsteem', 20);
     localStorage.setItem('insight', 20);
-    window.location = './map/index.html';
+    window.location = './adv/index.html';
+    
 });
 
 
