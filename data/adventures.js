@@ -49,7 +49,7 @@ const gear = {
 const shower = {
     id: 'shower',
     title: 'Shower',
-    image: 'shower.jpg',
+    image: '../assets/showers.jpg',
     map: {
         top: '45%',
         left: '5%'
@@ -107,14 +107,14 @@ const wook = {
         left: '85%'
     },
     active: true,
-    image: 'wook.png',
+    image: '../assets/wook.jpg',
     audio: 'wook.wav',
     description: `
         You see a wook... they offer you drugs... what do you do?
     `,
     choices: [{
         id: 'consume',
-        description: 'spun',
+        description: 'Consume',
         result: 'You get spun and vomit!',
         insight: -10,
         joy: -10,

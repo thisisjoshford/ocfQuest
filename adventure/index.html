@@ -10,7 +10,7 @@
 <body>
     <header>
         <img>
-        <h1>Welcome to the fair!...</h1>
+        <h1 class="center">Oregeon Country Fair Adventure!</h1>
         <div class="center">
             <fieldset class ="userInfo">
                 <legend>Player Stats</legend>
@@ -26,15 +26,25 @@
             </fieldset>
         </div>
     </header>
-    <div id="main">
-        <h2 id="title"></h2>
-        <p><img id="image"></p>
-        <p id="description"></p>
-        <form id="choice_form">
-            <p id="choice_data"></p>
-            <button id="submit">Do it!</button>
-        </form>
+
+    <h2 id="title" class="center"></h2>
+
+    <div id=imageDiv class="center">
+        <img id="image">
     </div>
+    
+    <div class="center">
+
+        <div id="main">
+            <p id="description"></p>
+            <form id="choice_form">
+                <p id="choice_data"></p>
+                <button id="submit">Do it!</button>
+            </form>
+        </div>
+
+    </div>
+   
     <script type="module" src="adventurePage.js"></script>
 </body>
 </html>

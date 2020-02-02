@@ -12,10 +12,11 @@ const adventureName = document.getElementById('title');
 const image = document.getElementById('image');
 const description = document.getElementById('description');
 const choiceData = document.getElementById('choice_data');
+const choiceForm = document.getElementById('choice_form');
 
 const submitButton = document.getElementById ('submit');
 
-//get user name, and default numbers of insight, selfEsteem, and joy from local storage and update the DOM
+//get user name, and default numbers of insight, selfEsteem, and joy from local storage and updates the DOM
 fairName.textContent = localStorage.getItem('fairName');
 insight.textContent = localStorage.getItem('insight');
 selfEsteem.textContent = localStorage.getItem('selfEsteem');
@@ -90,3 +91,20 @@ function createChoiceButton(choice) {
     //return all that hard work
     return label;
 }
+
+//create an event listener on the choiceForm that was imported from DOM. This will grab the users selected choice, check the array of choices from the parent adventure, populate the found results to the DOM, then adjust the users score(insight, self esteem, joy). Will also need to update the quest to completed or off and disable map link. 
+choiceForm.addEventListener('submit', function(event) {
+    //prevents the button refreshing the page on click
+    event.preventDefault();
+    
+    //creates a new variable with a FormData function
+    const newFormData = new FormData(choiceForm);
+    //grabs the selected radio button info and stores that value into the choiceId variable we are declaring 
+    const userChoiceId = newFormData.get('choice');
+    
+    //declare and populate the userChoice variable with the choice
+    const userChoice = findById(userChoiceId, adventureChoices);
+    console.log(userChoice);
+
+
+});
