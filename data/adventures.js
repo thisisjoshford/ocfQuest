@@ -1,10 +1,10 @@
 const gear = {
     id: 'gear',
-    title: 'Oh no! You forgot something!',
+    title: 'Check In',
     image: 'gear.jpg',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '80%',
+        left: '58%'
     },
     active: true,
     description: `
@@ -48,10 +48,10 @@ const gear = {
 
 const shower = {
     id: 'shower',
-    title: 'Time to take a shower!',
+    title: 'Shower',
     image: 'shower.jpg',
     map: {
-        top: '31%',
+        top: '45%',
         left: '5%'
     },
     audio: 'monsters.wav',
@@ -101,10 +101,10 @@ const shower = {
 
 const wook = {
     id: 'wook',
-    title: 'Encounter with a Wild Wook',
+    title: 'Wook',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '44%',
+        left: '85%'
     },
     active: true,
     image: 'wook.png',
