@@ -29,7 +29,7 @@ function constructAdventureLink(adventure) {
         //sets the adventure title as the link title
         link.textContent = adventure.title;
       //creates a X when completed
-    } else link.textContent = '✘';x
+    } else link.textContent = '✘';
     //sets style value to a percentage based on adventure meta data
     //top sets % from top of container and left is % from the left of container
     link.style.top = adventure.map.top;
