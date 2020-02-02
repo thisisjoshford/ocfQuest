@@ -1,0 +1,48 @@
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#map {
+    background-image: url("../assets/map.jpg");
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: calc(80vw * 642 / 900);
+    margin: auto;
+}
+
+.userInfo {
+    width: 250px;
+    margin-bottom: 15px;x
+}
+
+.adventure {
+    font-size: 15px;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid black 2px;
+    background-color: #f9ffba;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    box-shadow: 3px 3px 3px black;
+    text-decoration: wavy;
+}
+
+a:hover {
+    background-color: aqua;
+    
+}
+
+h1 {
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 50px;
+}
+
+
