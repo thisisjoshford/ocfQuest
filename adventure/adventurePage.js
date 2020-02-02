@@ -114,4 +114,21 @@ choiceForm.addEventListener('submit', function(event) {
     result.classList.remove('hidden');
     //updates the text content with the user choice 
     resultDescription.textContent = userChoice.result;
+
+    //gets current insight, joy, & self esteem values from local storage
+    let insight = localStorage.getItem('insight');
+    let joy = localStorage.getItem('joy');
+    let selfEsteem = localStorage.getItem('self_esteem');
+
+    //does the maths (but first turns the strings into integers)
+    insight = parseInt(insight) + (parseInt(userChoice.insight));
+    joy = parseInt(joy) + (parseInt(userChoice.joy));
+    selfEsteem = parseInt(selfEsteem) + (parseInt(userChoice.self_Esteem));
+
+    //updates local storage data with the new values
+    localStorage.setItem('insight', insight);
+    localStorage.setItem('joy', joy);
+    localStorage.setItem('self_esteem', selfEsteem);
+
+
 });
