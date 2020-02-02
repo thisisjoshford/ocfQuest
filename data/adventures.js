@@ -1,7 +1,7 @@
 const gear = {
     id: 'gear',
     title: 'Check In',
-    image: 'gear.jpg',
+    image: '../assets/gear.jpg',
     map: {
         top: '80%',
         left: '58%'
@@ -129,10 +129,10 @@ const wook = {
     }]
 };
 
-const adventures = [
+const adventuresArray = [
     gear,
     shower, 
     wook,
 ];
 
-export default adventures;
+export default adventuresArray;

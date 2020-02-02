@@ -1,8 +1,14 @@
-#mainMap {
-    background-image: url("../assets/map.jpg");
-    background-size: cover;
+img {
+    width:400px;
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.userInfo {
+    width: 200px;
+    margin-bottom: 15px;
 }
