@@ -1,5 +1,5 @@
 #mainMap {
-    background-image: url('../assets/map.jpg');
+    background-image: url("../assets/map.jpg");
     background-size: cover;
 }
 
