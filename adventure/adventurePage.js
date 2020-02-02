@@ -17,6 +17,8 @@ const choiceForm = document.getElementById('choice_form');
 const result = document.getElementById('result');
 const resultDescription = document.getElementById('resultDescription');
 
+const adventureBody = document.getElementById('adventureBody');
+
 //get user name, and default numbers of insight, selfEsteem, and joy from local storage and updates the DOM
 fairName.textContent = localStorage.getItem('fairName');
 insight.textContent = localStorage.getItem('insight');
@@ -114,6 +116,7 @@ choiceForm.addEventListener('submit', function(event) {
     result.classList.remove('hidden');
     //updates the text content with the user choice 
     resultDescription.textContent = userChoice.result;
+    adventureBody.classList.add('hidden');
 
     //gets current insight, joy, & self esteem values from local storage
     let insight = localStorage.getItem('insight');

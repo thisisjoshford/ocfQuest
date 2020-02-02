@@ -8,40 +8,43 @@
     <title>Oregon Country Fair Adventure</title>
 </head>
 <body>
-    <header>
-        <img>
-        <h1 class="center">Oregeon Country Fair Adventure!</h1>
+    <div id="adventureBody">
+        <header>
+            <img>
+            <h1 class="center">Oregeon Country Fair Adventure!</h1>
+            <div class="center">
+                <fieldset class="userInfo">
+                    <legend>Player Stats</legend>
+                    <img id="userImg">
+                    <strong>Name: </strong>
+                    <span id="fairName"></span><br>
+                    <strong>Insight: </strong>
+                    <span id="insight"></span>
+                    <strong>Joy:</strong>
+                    <span id="joy"></span>
+                    <strong>Self Esteem:</strong>
+                    <span id="selfEsteem"></span>
+                </fieldset>
+            </div>
+        </header>
+        
+        <h2 id="title" class="center"></h2>
+        <div id=imageDiv class="center">
+            <img id="image">
+        </div>
+        
         <div class="center">
-            <fieldset class ="userInfo">
-                <legend>Player Stats</legend>
-                <img id="userImg">
-                <strong>Name: </strong>
-                <span id="fairName"></span><br>
-                <strong>Insight: </strong>
-                <span id="insight"></span>
-                <strong>Joy:</strong>
-                <span id="joy"></span>
-                <strong>Self Esteem:</strong>
-                <span id="selfEsteem"></span>
-            </fieldset>
+            <div id="main">
+                <p id="description"></p>
+                <form id="choice_form">
+                    <p id="choice_data"></p>
+                    <button id="submit">Do it!</button>
+                </form>
+            </div>
         </div>
-    </header>
-
-    <h2 id="title" class="center"></h2>
-
-    <div id=imageDiv class="center">
-        <img id="image">
     </div>
-    
-    <div class="center">
 
-        <div id="main">
-            <p id="description"></p>
-            <form id="choice_form">
-                <p id="choice_data"></p>
-                <button id="submit">Do it!</button>
-            </form>
-        </div>
+    <div id="resultDiv" class="center">
         <section id="result" class="hidden">
             <p id="resultDescription"></p>
             <a href="../map">Keep walking the 8!</a>
