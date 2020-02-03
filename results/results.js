@@ -11,8 +11,12 @@ const mediumScore = 'You leave the fair feeling fairly good... there were a lot 
 const lowScore = 'Shit... this year wasn\'t the greatest year for you... You certainly made your fair share of mistakes, but learned a lot. Time to go home, reflect, and see if you want to make the journey again next year.';
 const hadToLeave = 'Fuck!  Never forget your ID!!! They are so strict about that shit... maybe you can drive home and make the journey back down.... this super sucks!';
 
-if (totalScore >= 200) {results.textContent = highScore;}
-if (totalScore >= 100 && totalScore <= 199) {results.textContent = mediumScore;}
-if (totalScore <= 99) {results.textContent = lowScore;}
+if (localStorage.getItem('gameOver') === 'true'){
+    results.textContent = hadToLeave;
+} else {
+    if (totalScore >= 200) {results.textContent = highScore;}
+    if (totalScore >= 100 && totalScore <= 199) {results.textContent = mediumScore;}
+    if (totalScore <= 99) {results.textContent = lowScore;}
+}
 
 

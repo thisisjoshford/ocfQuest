@@ -15,6 +15,7 @@ submitButton.addEventListener('click', () => {
     localStorage.setItem('gear', true);
     localStorage.setItem('wook', true);
     localStorage.setItem('shower', true);
+    localStorage.setItem('gameOver', false);
     window.location = './map/index.html';
     
 });

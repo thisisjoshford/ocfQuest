@@ -8,6 +8,11 @@ const joy = document.getElementById('joy');
 //gather map DOM to append the adventures to
 const map = document.getElementById('map');
 
+//if the game is over go to end
+if (localStorage.getItem('gameOver') === 'true') {
+    window.location.href = '../results';
+}
+
 //get user name, and default numbers of insight, selfEsteem, and joy from local storage and update that DOM
 fairName.textContent = localStorage.getItem('fairName');
 insight.textContent = localStorage.getItem('insight');
