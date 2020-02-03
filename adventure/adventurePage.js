@@ -105,6 +105,8 @@ choiceForm.addEventListener('submit', function(event) {
     const userChoiceId = newFormData.get('choice');
     //declare and populate the userChoice variable with the choice
     const userChoice = findById(userChoiceId, adventureChoices);
+    //end game if they forgot to bring identification card
+    if (userChoice.id === 'id') {localStorage.setItem('gameOver', true);}
     //removes the adventure from DOM (hides)
     description.classList.add('hidden');
     choiceForm.classList.add('hidden');
