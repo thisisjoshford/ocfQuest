@@ -28,9 +28,9 @@ const gear = {
             +20 Self esteem
             +20 Insight
         `,
-        insight: 5,
-        joy: -3,
-        self_esteem: -5
+        insight: 20,
+        joy: 20,
+        self_esteem: 20
     }, {
         id: 'id',
         description: 'ID Card',
@@ -116,9 +116,9 @@ const wook = {
         id: 'consume',
         description: 'Consume',
         result: 'You get spun and vomit!',
-        insight: -10,
-        joy: -10,
-        self_esteem: -10
+        insight: -20,
+        joy: -20,
+        self_esteem: -20
     }, {
         id: 'reject',
         description: 'Reject!',
