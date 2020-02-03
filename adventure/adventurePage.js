@@ -107,7 +107,6 @@ choiceForm.addEventListener('submit', function(event) {
     
     //declare and populate the userChoice variable with the choice
     const userChoice = findById(userChoiceId, adventureChoices);
-    console.log(userChoice);
 
     //removes the adventure from DOM (hides)
     description.classList.add('hidden');
@@ -139,5 +138,4 @@ choiceForm.addEventListener('submit', function(event) {
     let remainingAdventures = parseInt(localStorage.getItem('quests'));
     remainingAdventures--;
     localStorage.setItem('quests', remainingAdventures);
-   
 });

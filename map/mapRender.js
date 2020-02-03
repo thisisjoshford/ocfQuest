@@ -38,16 +38,19 @@ function constructAdventureLink(adventure) {
     return link;
 }
 
-//if 
+const remainingAdventures = parseInt(localStorage.getItem('quests'));
 
-//for loop that will cycle through the amount of adventures in adventures array
-for (let i = 0; i < adventuresArray.length; i++) {
-    //makes an adventure variable and sets it to the first one in array... each time it loops through i will change from 0, 1, 2, 3 until all of the adventures are cycled through (adventures.length)
-    const adventure = adventuresArray[i];
-    //creates an empty adventureDisplay variable (declares it)
-    let adventureDisplay;
-    //runs the function that constructs a link to the adventure
-    adventureDisplay = constructAdventureLink(adventure);
-    //throws the data into the container with the map ID associated with it
-    map.appendChild(adventureDisplay);
-}
+if (remainingAdventures > 0) {
+    //for loop that will cycle through the amount of adventures in adventures array
+    for (let i = 0; i < adventuresArray.length; i++) {
+        //makes an adventure variable and sets it to the first one in array... each time it loops through i will change from 0, 1, 2, 3 until all of the adventures are cycled through (adventures.length)
+        const adventure = adventuresArray[i];
+        //creates an empty adventureDisplay variable (declares it)
+        let adventureDisplay;
+        //runs the function that constructs a link to the adventure
+        adventureDisplay = constructAdventureLink(adventure);
+        //throws the data into the container with the map ID associated with it
+        map.appendChild(adventureDisplay);
+    }
+
+} else window.location.href = '../results';
