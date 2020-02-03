@@ -135,5 +135,9 @@ choiceForm.addEventListener('submit', function(event) {
     localStorage.setItem('self_esteem', selfEsteem);
     //changes the adventure active status to false
     localStorage.setItem(adventure.id, false);
-
+    //grabs remaining adventures from local storage and decrements it
+    let remainingAdventures = parseInt(localStorage.getItem('quests'));
+    remainingAdventures--;
+    localStorage.setItem('quests', remainingAdventures);
+   
 });

@@ -38,6 +38,8 @@ function constructAdventureLink(adventure) {
     return link;
 }
 
+//if 
+
 //for loop that will cycle through the amount of adventures in adventures array
 for (let i = 0; i < adventuresArray.length; i++) {
     //makes an adventure variable and sets it to the first one in array... each time it loops through i will change from 0, 1, 2, 3 until all of the adventures are cycled through (adventures.length)
