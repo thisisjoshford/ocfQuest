@@ -99,15 +99,12 @@ function createChoiceButton(choice) {
 choiceForm.addEventListener('submit', function(event) {
     //prevents the button refreshing the page on click
     event.preventDefault();
-    
     //creates a new variable with a FormData function
     const newFormData = new FormData(choiceForm);
     //grabs the selected radio button info and stores that value into the choiceId variable we are declaring 
     const userChoiceId = newFormData.get('choice');
-    
     //declare and populate the userChoice variable with the choice
     const userChoice = findById(userChoiceId, adventureChoices);
-
     //removes the adventure from DOM (hides)
     description.classList.add('hidden');
     choiceForm.classList.add('hidden');
@@ -117,25 +114,23 @@ choiceForm.addEventListener('submit', function(event) {
     resultDescription.textContent = userChoice.result;
     //hides the adventure body after user makes the choice
     adventureBody.classList.add('hidden');
-
     //gets current insight, joy, & self esteem values from local storage
     let insight = localStorage.getItem('insight');
     let joy = localStorage.getItem('joy');
-    let selfEsteem = localStorage.getItem('self_esteem');
-   
+    let selfEsteem = localStorage.getItem('selfEsteem');
     //does the maths (but first turns the strings into integers)
     insight = parseInt(insight) + (parseInt(userChoice.insight));
     joy = parseInt(joy) + (parseInt(userChoice.joy));
-    selfEsteem = parseInt(selfEsteem) + (parseInt(userChoice.self_Esteem));
-
+    selfEsteem = parseInt(selfEsteem) + (parseInt(userChoice.selfEsteem));
     //updates local storage data with the new values
     localStorage.setItem('insight', insight);
     localStorage.setItem('joy', joy);
-    localStorage.setItem('self_esteem', selfEsteem);
+    localStorage.setItem('selfEsteem', selfEsteem);
     //changes the adventure active status to false
     localStorage.setItem(adventure.id, false);
     //grabs remaining adventures from local storage and decrements it
     let remainingAdventures = parseInt(localStorage.getItem('quests'));
     remainingAdventures--;
+    //update local storage
     localStorage.setItem('quests', remainingAdventures);
 });

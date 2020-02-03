@@ -16,9 +16,9 @@ const gear = {
         result: `
             You get eaten alive by the mosquitoes your first night, but fortunately your friends give you some for the remaining nights and only get a little bummed... You loose a little joy and self esteem but gain some insight for next time.
         `,
-        insight: 5,
-        joy: -3,
-        self_esteem: -5
+        insight: 20,
+        joy: -33,
+        selfEsteem: -10
     }, {
         id: 'tent',
         description: 'Tent',
@@ -30,7 +30,7 @@ const gear = {
         `,
         insight: 20,
         joy: 20,
-        self_esteem: 20
+        selfEsteem: 20
     }, {
         id: 'id',
         description: 'ID Card',
@@ -42,7 +42,7 @@ const gear = {
         `,
         insight: 20,
         joy: -20,
-        self_esteem: -20
+        selfEsteem: -20
     }]
 };
 
@@ -70,7 +70,7 @@ const shower = {
         `,
         insight: 20,
         joy: 20,
-        self_esteem: 20
+        selfEsteem: 20
     }, {
         id: 'misspiggy',
         description: 'Miss Piggy\'s',
@@ -82,7 +82,7 @@ const shower = {
         `,
         insight: 10,
         joy: -10,
-        self_esteem: -10
+        selfEsteem: -10
     }, {
         id: 'flowingNotes',
         description: 'The Flowing Notes',
@@ -94,7 +94,7 @@ const shower = {
         `,
         insight: 33,
         joy: 33,
-        self_esteem: 33
+        selfEsteem: 33
     }]
 
 };
@@ -118,21 +118,19 @@ const wook = {
         result: 'You get spun and vomit!',
         insight: -20,
         joy: -20,
-        self_esteem: -20
+        selfEsteem: -20
     }, {
         id: 'reject',
         description: 'Reject!',
         result: 'Good choice!  Never take drugs from a random wook!',
         insight: 100,
         joy: 100,
-        self_esteem: 300
+        selfEsteem: 300
     }]
 };
-
 const adventuresArray = [
     gear,
     shower, 
     wook,
 ];
-
 export default adventuresArray;
