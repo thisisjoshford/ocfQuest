@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="adventurePage.css">
+    <title>Oregon Country Fair Adventure</title>
+</head>
+<body>
+    <div id="adventureBody">
+        <header>
+            <img>
+            <h1 class="center">Oregon Country Fair Adventure!</h1>
+            <div class="center">
+                <fieldset class="userInfo">
+                    <legend>Player Stats</legend>
+                    <img id="userImg">
+                    <strong>Name: </strong>
+                    <span id="fairName"></span><br>
+                    <strong>Insight: </strong>
+                    <span id="insight"></span>
+                    <strong>Joy:</strong>
+                    <span id="joy"></span>
+                    <strong>Self Esteem:</strong>
+                    <span id="selfEsteem"></span>
+                </fieldset>
+            </div>
+        </header>
+        
+        <h2 id="title" class="center"></h2>
+        <div id=imageDiv class="center">
+            <img id="image">
+        </div>
+        
+        <div class="center">
+            <div id="main">
+                <p id="description"></p>
+                <form id="choice_form">
+                    <p id="choice_data"></p>
+                    <button id="submit">Do it!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultDiv" class="center">
+        <section id="result" class="hidden">
+            <p id="resultDescription"></p>
+            <a href="../map">Keep walking the 8!</a>
+        </section>
+
+    </div>
+   
+    <script type="module" src="adventurePage.js"></script>
+</body>
+</html>
